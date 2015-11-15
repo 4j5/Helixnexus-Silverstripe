@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Overview
 
 Base project folder for a SilverStripe ([http://silverstripe.org](http://silverstripe.org)) installation. Requires additional modules to function:
@@ -49,3 +50,7 @@ If you would like to make changes to the SilverStripe core codebase, we have an 
 	GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, 
 	STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
 	OF SUCH DAMAGE.
+=======
+# Helixnexus-Silverstripe
+Helixnexus based on silverstripe framework
+>>>>>>> 107afac314af03ac993ff07f13bcb24a7acd7fc6

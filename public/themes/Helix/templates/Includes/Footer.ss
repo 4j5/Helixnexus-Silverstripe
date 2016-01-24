@@ -7,7 +7,7 @@
 				<span class="arrow">&rarr;</span> <% include Navigation %>
 			</div>
 
-			<small class="right"><a href="http://simple.innovatif.com/about/">Theme</a> by <a href="http://www.helixnexus.uk">Andy</a> (Innovatif) / Powered by <a href="http://silverstripe.org">SilverStripe</a></small>
+			<small class="right"> by <a href="http://www.helixnexus.uk">Andy</a> / Powered by <a href="http://silverstripe.org">SilverStripe</a></small>
 
 		</div>
 	</div>

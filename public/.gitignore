@@ -8,7 +8,4 @@ silverstripe-cache
 .idea
 .DS_Store
 vendor/
-framework/
-cms/
-siteconfig/
-reports/
+composer.lock

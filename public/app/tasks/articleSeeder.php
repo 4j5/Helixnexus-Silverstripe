@@ -25,6 +25,7 @@ class ArticleSeeder extends BuildTask {
             $articlePage->SummaryImageID = $img->ID;
             $articlePage->setParent($blogPage);
             $articlePage->write();
+            var_dump($articlePage);
             $articlePage->doPublish();
         }
     }

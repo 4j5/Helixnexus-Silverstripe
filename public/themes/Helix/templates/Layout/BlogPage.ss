@@ -1,14 +1,16 @@
+<script src="{$ThemeDir}/assets/javascript/masonry.pkgd.min.js"></script>
+<script src="{$ThemeDir}/assets/javascript/init-masonry.js"></script>
 
 <div class="contents">
       <div class="header">
         <h1>$Title</h1>
       </div>
 
-      <div class="blog_page_content">
-        <% loop $PaginatedArticles %>
-            <% include blog_tile blogArticle=$Me %>
-        <% end_loop %>
-      </div>
+          <div class="blog_page_content grid">
+            <% loop $PaginatedArticles %>
+                <% include blog_tile blogArticle=$Me %>
+            <% end_loop %>
+          </div>
 
   <div class="pagination_navigation">
     <% if $PaginatedArticles.MoreThanOnePage %>

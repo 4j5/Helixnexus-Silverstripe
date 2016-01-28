@@ -1,5 +1,5 @@
 <% with $blogArticle %>
-<div class="blog-tile">
+<div class="blog-tile grid-item">
     <a href="$Link" >
         <div class="image_holder">
             $SummaryImage.SetSize(200,150)

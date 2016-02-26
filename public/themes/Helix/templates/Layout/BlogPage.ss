@@ -1,10 +1,9 @@
-
 <div class="contents">
-      <div class="header">
+      <div class="page-header">
         <h1>$Title</h1>
       </div>
 
-      <div class="blog_page_content">
+      <div class="blog_page_content grid">
         <% loop $PaginatedArticles %>
             <% include blog_tile blogArticle=$Me %>
         <% end_loop %>
@@ -33,3 +32,5 @@
   </div>
 
 </div>
+<script src="{$ThemeDir}/assets/javascript/masonry.pkgd.min.js"></script>
+<script src="{$ThemeDir}/assets/javascript/load-masonry.js"></script>

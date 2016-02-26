@@ -1,16 +1,16 @@
 <header class="header" role="banner">
-	<div class="header-inner-container">
+	<div id="header-inner-container">
 
 			<a href="$BaseHref" class="brand" rel="home">
-				<h1>$SiteConfig.Title</h1>
+				<h1 id="header-title">$SiteConfig.Title</h1>
 				<% if $SiteConfig.Tagline %>
-				<p>$SiteConfig.Tagline</p>
+				<p id="tag-line">$SiteConfig.Tagline</p>
 				<% end_if %>
 			</a>
 
 			<% if $SearchForm %>
-				<span class="search-dropdown-icon">L</span>
-				<div class="search-bar">
+				<span id="search-dropdown-icon">L</span>
+				<div id="search-bar">
 					$SearchForm
 				</div>
 			<% end_if %>

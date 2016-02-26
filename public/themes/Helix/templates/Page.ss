@@ -28,7 +28,6 @@
 <div class="main" role="main">
 		<% include Header %>
 	<div class="main-inner-container">
-		<h1>Hello world!</h1>
 		$Layout
 	</div>
 		<% include Footer %>

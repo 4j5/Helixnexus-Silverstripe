@@ -8,7 +8,8 @@ class ArticlePage extends Page {
     private static $db =
     [
         'Title' => 'Varchar(255)',
-        'Content' => 'HTMLText'
+        'Content' => 'HTMLText',
+        'summarySize' => 'Int'
     ];
 
     private static $has_one =
@@ -18,7 +19,7 @@ class ArticlePage extends Page {
 
     public function getCMSFields() {
         $fields = parent::getCMSFields();
-
+        $fields->addFieldToTab('Root.Main', $summarySize);
         $fields->addFieldToTab('Root.Main', $BlogImage = new UploadField('SummaryImage'));
         $folderName = 'BlogImages/' . $this->Name . '/';
         $BlogImage->setFolderName($folderName);

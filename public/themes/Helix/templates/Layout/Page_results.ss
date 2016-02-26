@@ -36,13 +36,15 @@
             <a class="prev" href="$Results.PrevLink" title="View the previous page">&larr;</a>
             <% end_if %>
             <span>
+                <ul>
                 <% loop $Results.Pages %>
                     <% if $CurrentBool %>
                     $PageNum
                     <% else %>
-                    <a href="$Link" title="View page number $PageNum" class="go-to-page">$PageNum</a>
+                    <li><a href="$Link" title="View page number $PageNum" class="go-to-page">$PageNum</a></li>
                     <% end_if %>
                 <% end_loop %>
+            </ul>
             </span>
             <% if $Results.NotLastPage %>
             <a class="next" href="$Results.NextLink" title="View the next page">&rarr;</a>

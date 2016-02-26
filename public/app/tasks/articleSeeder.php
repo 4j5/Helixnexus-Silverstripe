@@ -13,7 +13,7 @@ class ArticleSeeder extends BuildTask {
 
         $img = new Image();
         $imgFile = 'themes/Helix/assets/images/doof.jpg';
-        var_dump($imgFile);
+        // var_dump($imgFile);
         $img->Filename = $imgFile;
         $img->Title = 'Template image';
         $img->write();
@@ -22,10 +22,13 @@ class ArticleSeeder extends BuildTask {
             $articlePage = new ArticlePage;
             $articlePage->Title = "Article " . $articles;
             $articlePage->Content = $faker->text(400);
+            // $articlePage->summarySize = rand(1,3);
+            $articlePage->summarySize = 1;
             $articlePage->SummaryImageID = $img->ID;
             $articlePage->setParent($blogPage);
             $articlePage->write();
-            $articlePage->doPublish();
+            $articlePage->publish("Stage", "Live");
+            $articlePage->flushCache();
         }
     }
 

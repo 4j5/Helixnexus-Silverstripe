@@ -2,21 +2,53 @@
 //
 html body {
     height: 100%;
+    margin: 0;
+    background: url("../../images/bg.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .main {
-    background-image: url("../../images/wood2.jpg");
+    min-height: 100vh;
+}
+
+.Page-main {
+
+}
+
+.BarnLogPage-main {
+    // background-image: url("../../images/brick.jpg");
+}
+
+.BlogPage-main {
+    // background-image: url("../../images/wood2.jpg");
+}
+
+.title-container{
+    padding-top: 1px;
+}
+
+.header {
 }
 
 #header-inner-container {
   width: 960px ;
   margin: 0 auto;
-  background-image: url("../../images/folded-lined-paper.jpg");
-
+  // background-image: url("../../images/folded-lined-paper.jpg");
+  a {
+      text-decoration: none;
+      color: #fff;
+      text-shadow: 2px 2px 4px #000000;
+  }
+  h1 {
+      margin-bottom: 5px;
+      margin-top: 10px;
+  }
     #header-title {
         display: inline-block;
         font-size: 50px;
-        margin-left: 20px;
     }
 
     #tag-line {
@@ -36,13 +68,28 @@ html body {
 .main-inner-container {
     width: 960px ;
     margin: 0 auto;
-    background-image: url("../../images/folded-lined-paper.jpg");
+    // background-image: url("../../images/folded-lined-paper.jpg");
+    padding-bottom: 1px;
+    min-height: 80vh;
+
+    .content-container {
+        padding: 0 20px;
+    }
+}
+
+.footer-inner-container {
+    padding-top: 1px;
 }
 
 .footer-inner-container {
     width: 960px ;
     margin: 0 auto;
-    background-image: url("../../images/folded-lined-paper.jpg");
+    // background-image: url("../../images/folded-lined-paper.jpg");
+    color: #fff;
+    a {
+        color: #fff;
+        text-shadow: 2px 2px 4px #000000;
+    }
 }
 
 .blog_page_content {
@@ -66,37 +113,44 @@ html body {
     }
  }
 
-
-
- #navigation-container {
-     height: 40px;
-    ul {
-        text-align: center;
-        margin: 5px 0;
-        li {
-            padding: 0 5px;
-            display: inline-block;
-            font-size: 40px;
-            a {
-                text-decoration: none;
-            }
-        }
-    }
- }
-
  #header-inner-container {
 
  }
 
- .pagination_navigation {
-     height: 40px;
-     width: 960px ;
-     margin: 0 auto;
-     text-align: center;
-     p {
-         display: inline-block;
-     }
-     a {
-         display: inline-block;
-     }
- }
+.twitter-reel {
+    max-width: 300px;
+    width: 25%;
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+}
+
+.content-container {
+    width: 70%;
+    display: inline-block;
+
+}
+
+.main-inner-container {
+    padding: 0 20px;
+    box-sizing: border-box;
+    
+}
+
+#home-article {
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    transform: rotate(-2deg);
+    border-style: solid;
+    border-width: 1px;
+    background-image: url("../../images/folded-lined-paper.jpg");
+    -webkit-box-shadow: 10px 10px 24px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 24px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 24px -9px rgba(0,0,0,0.75);
+}
+
+.twitter-reel {
+    -webkit-box-shadow: 10px 10px 24px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 24px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 24px -9px rgba(0,0,0,0.75);
+}

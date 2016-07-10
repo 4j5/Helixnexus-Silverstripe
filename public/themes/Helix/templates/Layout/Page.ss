@@ -1,8 +1,9 @@
 
-<% include SideBar %>
 <div class="content-container">
 	<article>
-		<h1>$Title</h1>
+		<div class="title-container">
+			<h1>$Title</h1>
+		</div>
 		<div class="content">$Content</div>
 	</article>
 		$Form

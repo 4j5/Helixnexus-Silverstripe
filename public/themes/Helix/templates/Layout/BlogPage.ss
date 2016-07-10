@@ -4,9 +4,11 @@
       </div>
 
       <div class="blog_page_content grid">
-        <% loop $PaginatedArticles %>
-            <% include blog_tile blogArticle=$Me %>
-        <% end_loop %>
+          <div class="blog-control-container">
+            <% loop $PaginatedArticles %>
+                <% include blog_tile blogArticle=$Me %>
+            <% end_loop %>
+          </div>
       </div>
 
   <div class="pagination_navigation">

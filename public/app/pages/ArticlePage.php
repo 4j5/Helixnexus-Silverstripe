@@ -17,6 +17,8 @@ class ArticlePage extends Page {
         'SummaryImage' => 'Image'
     ];
 
+    static $defaults = array('summarySize' => 1);
+
     public function getCMSFields() {
         $fields = parent::getCMSFields();
         $fields->addFieldToTab('Root.Main', $summarySize);

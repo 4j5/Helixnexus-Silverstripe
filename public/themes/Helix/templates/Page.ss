@@ -18,23 +18,19 @@
 	<![endif]-->
 	<link rel="shortcut icon" href="{$ThemeDir}/assets/images/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="{$ThemeDir}/assets/stylesheets/css/main.css" />
-	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville|Architects+Daughter' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="http://livejs.com/live.js"></script>
 </head>
 
 <body class="$ClassName" >
-
-
-<div class="main" role="main">
-		<% include Header %>
-	<div class="main-inner-container">
-		$Layout
+	<div class="main {$ClassName}-main" role="main">
+			<% include Header %>
+		<div class="main-inner-container">
+			$Layout
+		</div>
+			<% include Footer %>
 	</div>
-		<% include Footer %>
-</div>
-
-
-<% require javascript('framework/thirdparty/jquery/jquery.js') %>
+	<% require javascript('framework/thirdparty/jquery/jquery.js') %>
 </body>
 
 </html>
